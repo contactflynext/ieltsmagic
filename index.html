@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IELTS Reading Part 1 | FlyNext</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-screen" id="loginScreen">
+  <img src="banner.jpg" class="banner">
+  <div class="login-box">
+    <h2>Enter Your Name</h2>
+    <input type="text" id="studentName" placeholder="Your full name">
+    <button onclick="startTest()">Start Test</button>
+  </div>
+</div>
+
+<div class="exam-screen hidden" id="examScreen">
+  <div class="top-bar">
+    <div id="welcome"></div>
+    <div id="timer">15:00</div>
+  </div>
+
+  <div class="container">
+    <div class="passage">
+      <h3>The Thylacine</h3>
+      <p>The extinct thylacine, also known as the Tasmanian tiger, was a marsupial...</p>
+      <p>(Full passage included exactly as provided)</p>
+    </div>
+
+    <div class="questions">
+      <h3>Questions</h3>
+
+      <label>1. ate an entirely <input id="q1"></label>
+      <label>2. depended mainly on <input id="q2"></label>
+      <label>3. inside its mother’s <input id="q3"></label>
+      <label>4. 3,100-year-old <input id="q4"></label>
+      <label>5. reduction in <input id="q5"></label>
+
+      <hr>
+
+      <div>
+        <p>6. Significant numbers were killed</p>
+        <select id="q6"><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select>
+      </div>
+
+      <div>
+        <p>7. Several born in zoos</p>
+        <select id="q7"><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select>
+      </div>
+
+      <div>
+        <p>8. Gould surprised biologists</p>
+        <select id="q8"><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select>
+      </div>
+
+      <div>
+        <p>9. Scientists worried early 1900s</p>
+        <select id="q9"><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select>
+      </div>
+
+      <div>
+        <p>10. Flynn plan impractical</p>
+        <select id="q10"><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select>
+      </div>
+
+      <div>
+        <p>11. Reasonable numbers existed</p>
+        <select id="q11"><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select>
+      </div>
+
+      <div>
+        <p>12. Only captive thylacines</p>
+        <select id="q12"><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select>
+      </div>
+
+      <div>
+        <p>13. Searches rarely made</p>
+        <select id="q13"><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select>
+      </div>
+
+      <button onclick="submitTest()">Submit</button>
+    </div>
+  </div>
+</div>
+
+<div class="result-screen hidden" id="resultScreen">
+  <h2 id="scoreText"></h2>
+</div>
+
+<footer>
+  © FlyNext International 2026 | Developed by SHAYEKH
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
